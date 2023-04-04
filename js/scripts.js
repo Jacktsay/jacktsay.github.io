@@ -31,4 +31,26 @@ window.addEventListener('DOMContentLoaded', event => {
         });
     });
 
+    const form = document.querySelector('.chatbox-form');
+const history = document.querySelector('.chatbox-history');
+
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  const input = document.querySelector('.chatbox-input');
+
+  // create new message element
+  const message = document.createElement('div');
+  message.classList.add('chatbox-message');
+  message.textContent = input.value;
+
+  // add message to chat history
+  history.appendChild(message);
+
+  // clear input field
+  input.value = '';
+
+  // auto scroll to bottom of chat history
+  history.scrollTop = history.scrollHeight;
+});
+
 });
