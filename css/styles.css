@@ -10974,6 +10974,7 @@ section.resume-section .resume-section-content {
 
 
 .chatbox-container {
+  display: none;
   position: fixed;
   bottom: 0;
   right: 0;
