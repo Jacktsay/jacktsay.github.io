@@ -30,9 +30,15 @@ window.addEventListener('DOMContentLoaded', event => {
             }
         });
     });
+    //
+    const chatbox = document.querySelector('.chatbox');
+    const toggleBtn = document.querySelector('.toggle-btn');
 
+    toggleBtn.addEventListener('click', () => {
+        chatbox.classList.toggle('hidden');
+    });
     const form = document.querySelector('.chatbox-form');
-const history = document.querySelector('.chatbox-history');
+    const history = document.querySelector('.chatbox-history');
 
 form.addEventListener('submit', (e) => {
   e.preventDefault();
