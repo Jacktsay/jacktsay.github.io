@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Chat with Jacky</title>
+    <title>ChatJack</title>
     <style>
       body {
         font-family: Arial, sans-serif;
@@ -32,7 +32,7 @@
     </style>
   </head>
   <body>
-    <h1>Chat with Jacky</h1>
+    <h1>Chat with AI_Jacky</h1>
     <div class="chatbox" id="chatbox"></div>
     <input type="text" id="message" placeholder="Type your message here...">
     <button id="send">Send</button>
@@ -54,8 +54,7 @@
           .then(function(response) {
             return response.text();
           })
-          .then(function(botMessage
-          ) {
+          .then(function(botMessage) {
             var botDiv = document.createElement("div");
             botDiv.className = "message bot";
             botDiv.innerHTML = "<strong>Jacky:</strong> " + botMessage;
